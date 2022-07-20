@@ -2,12 +2,25 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 public class Bus extends transport {
 
+    int busNumber;          // 버스 번호
+    int passengerCount;     // 승객 수
+    int money;              // 버스 수입
+
+    int passMax; // 최대 탑승인원
+    int fuel;
+
+    int fare;
+
+    Boolean status = true;
 
     // 매개변수로 버스 번호를 받는 생성자
     public Bus(int busNumber) {
-        this.busNumber = busNumber;
-    }
 
+        this.busNumber = busNumber;// 버스 번호
+        passMax = 30; // 최대 탑승인원
+        fuel = 100;
+        fare = 1000;
+    }
 
 
     // 승객이 버스에 탈 때
@@ -20,7 +33,6 @@ public class Bus extends transport {
 
             showMessageDialog(null, "만차로 인하여 " + a + "명의 승객만 탑승시켰습니다");
             System.out.println("만차로 인하여 " + a + "명의 승객만 탑승시켰습니다");
-
             return;
         }
         passengerCount += passenger;

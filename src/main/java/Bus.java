@@ -1,31 +1,25 @@
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class Bus extends transport {
-
-    int busNumber;          // 버스 번호
-    int passengerCount;     // 승객 수
-    int money;              // 버스 수입
-
     int passMax; // 최대 탑승인원
-    int fuel;
+    int fuel; // 연료.
 
-    int fare;
+    int fare; // 요금
 
-    Boolean status = true;
+
 
     // 매개변수로 버스 번호를 받는 생성자
-    public Bus(int busNumber) {
+    Bus(int number,String type) {
+        super(number,type);
 
-        this.busNumber = busNumber;// 버스 번호
+        this.number = number;// 버스 번호
         passMax = 30; // 최대 탑승인원
         fuel = 100;
         fare = 1000;
     }
-
-
-    // 승객이 버스에 탈 때
+    @Override
     public void take(int passenger) {
-        System.out.println(passenger + "명이 탑승합니다.");
+        System.out.println(number+"번 버스에 "+passenger + "명이 탑승합니다.");
         if (passenger >= (passMax - passengerCount)) {
             int a = (passMax - passengerCount);
             passengerCount += a;
@@ -40,10 +34,8 @@ public class Bus extends transport {
         // 승객 수 증가
     }
 
-    public void off(int passenger) {
-        passengerCount -= passenger;
-        System.out.println(passenger + "명이 하차하였습니다.");
-    }
+
+    // 승객이 버스에 탈 때
 
     public void fuelUp(int gas) {
         this.fuel += gas;      // 주유량 (매개변수 fuel)만큼 주유량 증가
@@ -62,12 +54,7 @@ public class Bus extends transport {
 
     // 버스의 현재 정보 출력
     public void showInfo() {
-        System.out.println("현재 버스 " + busNumber + "번의 승객은 " + passengerCount + "명, 잔여좌석 수는 " + (passMax - passengerCount) + "석, 수입은" + money + "입니다.");
-    }
-
-    public void status(boolean a) {
-        status = a;
-        System.out.println(status ? "주행상태: 운행중" : "주행상태: 차고지행");
+        System.out.println("현재 버스 " + number + "번의 승객은 " + passengerCount + "명, 잔여좌석 수는 " + (passMax - passengerCount) + "석, 수입은" + money + "입니다.");
     }
 
 

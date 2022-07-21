@@ -2,14 +2,23 @@
 public class Test {
     public static void main(String[] args) {
 
-        Bus busA = new Bus(100);
-        Bus busB = new Bus(200);
+        System.out.println("---------------------------");
 
-        if (busA.busNumber == busB.busNumber) {
+        Bus[] group = new Bus[2];
+        group[0] = new Bus(100, "bus");
+        group[1] = new Bus(200, "bus");
+
+        Bus busA = group[0];
+        Bus busB = group[1];
+
+        System.out.print("[생성결과] : ");
+        busA.Print();
+
+        if (busA.number == busB.number) {
             System.out.println("버스 번호 확인 필요");
             System.exit(0);
         }
-        System.out.println(busA.busNumber+"번 버스와 "+ busB.busNumber +"번 버스가 생성되었습니다.");
+
         System.out.println("---------------------------");
         busA.take(2);
         busA.showInfo();

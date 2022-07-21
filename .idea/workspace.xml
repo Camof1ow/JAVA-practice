@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ccb4a1-d7ce-4517-8e30-adeb19d29695" name="변경" comment="추상클래스. 상속 추가.">
+    <list default="true" id="c1ccb4a1-d7ce-4517-8e30-adeb19d29695" name="변경" comment="택시 클래스 추가 시나리오 출력확인">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Taxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Taxi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +103,8 @@
       <workItem from="1658316126295" duration="4503000" />
       <workItem from="1658320651224" duration="2737000" />
       <workItem from="1658365938850" duration="6847000" />
-      <workItem from="1658373864732" duration="817000" />
+      <workItem from="1658373864732" duration="1466000" />
+      <workItem from="1658379186311" duration="108000" />
     </task>
     <task id="LOCAL-00001" summary="과제 BUS 시나리오 작성.">
       <created>1658322118030</created>
@@ -130,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658365961535</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="택시 클래스 추가 시나리오 출력확인">
+      <created>1658374830446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658374830446</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +154,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="과제 BUS 시나리오 작성." />
     <MESSAGE value="추상클래스. 상속 추가." />
-    <option name="LAST_COMMIT_MESSAGE" value="추상클래스. 상속 추가." />
+    <MESSAGE value="택시 클래스 추가 시나리오 출력확인" />
+    <option name="LAST_COMMIT_MESSAGE" value="택시 클래스 추가 시나리오 출력확인" />
   </component>
 </project>
